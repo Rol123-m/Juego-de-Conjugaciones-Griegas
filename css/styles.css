@@ -1,0 +1,468 @@
+/* Variables de colores y fuentes con temática moderna y profesional */
+:root {
+  --primary: #1e63f7;         /* Azul profesional */
+  --primary-light: #4a81d9;
+  --primary-dark: #1d4ed8;
+  --secondary: #5f28d7;       /* Púrpura elegante */
+  --secondary-light: #8b5cf6;
+  --accent: #0ea5e9;          /* Azul claro acento */
+  --accent-dark: #0284c7;
+  --neutral-50: #e0d5d5;
+  --neutral-100: #f5f5f5;
+  --neutral-200: #e5e5e5;
+  --neutral-300: #d4d4d4;
+  --neutral-600: #525252;
+  --neutral-700: #404040;
+  --neutral-800: #262626;
+  --neutral-900: #3013bf;
+  --success: #10b981;
+  --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  --gradient-accent: linear-gradient(135deg, var(--accent) 0%, var(--secondary-light) 100%);
+  --font-title: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --border-radius: 12px;
+  --border-radius-lg: 16px;
+}
+
+/* Importar fuentes modernas de Google */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Reset moderno */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--neutral-50);
+  color: var(--neutral-800);
+  line-height: 1.6;
+  min-height: 100vh;
+  padding-bottom: 2rem;
+  background-image: 
+    radial-gradient(circle at 1% 1%, rgba(37, 99, 235, 0.03) 0%, transparent 20%),
+    radial-gradient(circle at 99% 99%, rgba(124, 58, 237, 0.03) 0%, transparent 20%);
+}
+
+/* Header con estilo moderno y minimalista */
+header {
+  background: var(--gradient-primary);
+  color: white;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  text-align: center;
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-accent);
+}
+
+header img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  object-fit: cover;
+  background: var(--neutral-100);
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition);
+}
+
+header img:hover {
+  transform: scale(1.05);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.header-content h1 {
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 2.4rem;
+  letter-spacing: -0.5px;
+  margin-bottom: 0.4rem;
+}
+
+.header-content p {
+  opacity: 0.9;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 1280px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+}
+
+h2 {
+  font-family: var(--font-title);
+  color: var(--neutral-800);
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: var(--gradient-primary);
+  border-radius: 2px;
+}
+.subtitle {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: bolder;
+  animation: great 2s forwards;
+}
+
+@keyframes great {
+  from {
+     font-size: 8px;
+  }
+  to {
+      font-size:20px;
+  }
+  
+}
+
+
+
+/* Grid de juegos moderno */
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+/* Tarjetas de juego con estilo moderno */
+.game-card {
+  background: white;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid var(--neutral-200);
+  position: relative;
+}
+
+.game-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--gradient-primary);
+}
+
+.game-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.game-card h3 {
+  background: var(--gradient-primary);
+  color: white;
+  padding: 1.5rem;
+  margin: 0;
+  font-family: var(--font-title);
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+.game-card a {
+  display: block;
+  background: var(--neutral-800);
+  color: white;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+  margin: 1.5rem;
+  border-radius: 8px;
+  font-family: var(--font-title);
+  box-shadow: var(--shadow-sm);
+  letter-spacing: -0.5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.game-card a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.7s ease;
+}
+
+.game-card a:hover {
+  background: var(--neutral-900);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.game-card a:hover::before {
+  left: 100%;
+}
+
+.game-card p {
+  padding: 0 1.5rem 1.5rem;
+  text-align: center;
+  color: var(--neutral-600);
+  font-size: 1rem;
+  margin-top: auto;
+  line-height: 1.6;
+}
+
+/* Botón de instalación moderno */
+#installBtn {
+  display: block;
+  margin: 3rem auto;
+  padding: 1.2rem 3rem;
+  background: var(--gradient-primary);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-family: var(--font-title);
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: var(--shadow-lg);
+  letter-spacing: -0.5px;
+  position: relative;
+  overflow: hidden;
+}
+
+#installBtn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0.2), transparent);
+  transform: translateY(-100%);
+  transition: transform 0.6s ease;
+}
+
+#installBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-xl);
+}
+
+#installBtn:hover::before {
+  transform: translateY(0);
+}
+
+#installBtn:active {
+  transform: translateY(0);
+}
+
+/* Estadísticas globales modernas */
+#estadisticasGlobal {
+  background: white;
+  padding: 2.5rem;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  margin-bottom: 2.5rem;
+  text-align: center;
+  border: 1px solid var(--neutral-200);
+  position: relative;
+}
+
+#estadisticasGlobal::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--gradient-primary);
+  border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0;
+}
+.footer-content {
+  display: inline;
+  margin: auto;
+  text-align: center;
+}
+
+/* Responsive design mejorado */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  header img {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .games-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  .game-card h3 {
+    padding: 1.2rem;
+    font-size: 1.3rem;
+  }
+  
+  .header-content h1 {
+    font-size: 2rem;
+  }
+  
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .game-card h3 {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+  
+  .game-card a {
+    margin: 1rem;
+    padding: 0.9rem;
+  }
+  
+  #installBtn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  .header-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  #estadisticasGlobal {
+    padding: 1.5rem;
+  }
+}
+
+/* Animaciones modernas */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.game-card {
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.game-card:nth-child(1) { animation-delay: 0.1s; }
+.game-card:nth-child(2) { animation-delay: 0.2s; }
+.game-card:nth-child(3) { animation-delay: 0.3s; }
+.game-card:nth-child(4) { animation-delay: 0.4s; }
+.game-card:nth-child(5) { animation-delay: 0.5s; }
+.game-card:nth-child(6) { animation-delay: 0.6s; }
+.game-card:nth-child(7) { animation-delay: 0.7s; }
+
+/* Mejoras de accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto;
+  }
+}
+
+/* Focus states para accesibilidad */
+#installBtn:focus,
+.game-card a:focus {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Efectos de modo oscuro opcional */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --neutral-50: #0a0a0a;
+    --neutral-100: #171717;
+    --neutral-200: #262626;
+    --neutral-300: #404040;
+    --neutral-600: #d4d4d4;
+    --neutral-700: #e5e5e5;
+    --neutral-800: #f5f5f5;
+    --neutral-900: #fafafa;
+  }
+  
+  body {
+    background-image: 
+      radial-gradient(circle at 1% 1%, rgba(37, 99, 235, 0.05) 0%, transparent 20%),
+      radial-gradient(circle at 99% 99%, rgba(124, 58, 237, 0.05) 0%, transparent 20%);
+  }
+  
+  .game-card,
+  #estadisticasGlobal {
+    background: var(--neutral-100);
+    border-color: var(--neutral-800);
+  }
+}

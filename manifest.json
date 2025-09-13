@@ -1,0 +1,20 @@
+{
+  "name": "Vivos Para Servir - Juegos de Griego Koiné",
+  "short_name": "Griego Juegos",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#16a085",
+  "theme_color": "#1abc9c",
+  "icons": [
+    {
+      "src": "./img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "../img/icon-512.png.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

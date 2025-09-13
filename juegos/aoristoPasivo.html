@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Juego: Aoristo y Futuro Pasivo</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/juegos.css">
+   
+</head>
+<body>
+  <header>
+    <img src="../img/logo.jpeg" alt="Logo Ministerio">
+    <h1>Ministerio Vivos Para Servir - Juego de Conjugaciones (Aoristo Pasivo y Futuro Pasivo)</h1>
+  </header>
+
+  <div class="container">
+    <div id="game">
+      <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+      <div class="question" id="question"></div>
+      <div class="options" id="options"></div>
+      <div class="feedback" id="feedback"></div>
+      <button class="next-btn" id="nextBtn" style="display:none;">Siguiente</button>
+    </div>
+    
+    <div id="results" style="display:none;">
+      <h2>🎉 ¡Has completado el juego del Aoristo!</h2>
+      <p>Tu puntuación final:</p>
+      <div class="score-display" id="finalScore"></div>
+      <button class="restart-btn" id="restartBtn">Jugar de nuevo</button>
+    </div>
+    
+    <div id="stats" style="margin-top:20px;"></div>
+  </div>
+
+  <script src="../js/juego-aoristoPasivo.js"></script>
+  <!--<script src="js/estadisticas.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vivos Para Servir - Juegos de Griego Koiné</title>
+  <meta name="description" content="Aprende griego koiné de forma interactiva con nuestros juegos educativos">
+  <link rel="icon" href="img/logo.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2563eb">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+  <div class="header-container">
+    <img src="img/logo.jpeg" alt="Logo Vivos Para Servir" class="logo">
+    <div class="header-content">
+      <h1>Vivos Para Servir</h1>
+      <p>Juegos de Griego Koiné</p>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="hero-section">
+    <h2>Domina el Griego Koiné de forma interactiva</h2>
+    <p class="subtitle">Selecciona un juego para practicar y mejorar tus habilidades</p>
+  </div>
+  
+  <div class="games-grid">
+    <div class="game-card">
+      <h3>Presente Activo / Medio</h3>
+      <p>Practica las conjugaciones del tiempo presente en griego koiné</p>
+      <div class="stats" id="stats-presente"></div>
+      <a href="juegos/presente.html" class="game-button">
+        <span>Jugar ahora</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+    
+    <div class="game-card">
+      <h3>Imperfecto Activo / Medio-Pasivo</h3>
+      <p>Domina las formas del imperfecto en sus diferentes voces</p>
+      <div class="stats" id="stats-imperfecto"></div>
+      <a href="juegos/imperfecto.html" class="game-button">
+        <span>Jugar ahora</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+    
+    <div class="game-card">
+      <h3>Futuro Activo / Medio</h3>
+      <p>Aprende las conjugaciones futuras en griego koiné</p>
+      <div class="stats" id="stats-futuro"></div>
+      <a href="juegos/futuro.html" class="game-button">
+        <span>Jugar ahora</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+    
+    <div class="game-card">
+      <h3>Aoristo y Futuro Pasivo</h3>
+      <p>Practica las formas pasivas de aoristo y futuro</p>
+      <div class="stats" id="stats-aoristo"></div>
+      <a href="juegos/aoristoPasivo.html" class="game-button">
+        <span>Jugar ahora</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+    
+    <div class="game-card">
+      <h3>Perfecto Activo / Medio-Pasivo</h3>
+      <p>Domina las conjugaciones del tiempo perfecto</p>
+      <div class="stats" id="stats-perfecto"></div>
+      <a href="juegos/perfecto.html" class="game-button">
+        <span>Jugar ahora</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+    
+    <div class="game-card">
+      <h3>Aoristo Activo y Medio</h3>
+      <p>Practica las formas de aoristo en voces activa y media</p>
+      <div class="stats" id="stats-aoristo-activo"></div>
+      <a href="juegos/aoristoActivo.html" class="game-button">
+        <span>Jugar ahora</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+    
+    <div class="game-card">
+      <h3>Mega-Juego Combinado</h3>
+      <p>Desafío completo con todos los tiempos y voces</p>
+      <div class="stats" id="stats-mega"></div>
+      <a href="juegos/mega.html" class="game-button">
+        <span>Jugar ahora</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!--<div class="global-stats" id="estadisticasGlobal">
+    <h3>Tu progreso general</h3>
+    <div class="stats-content">
+      <div class="stat-item">
+        <span class="stat-value">0%</span>
+        <span class="stat-label">Completion</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value">0</span>
+        <span class="stat-label">Juegos completados</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value">0</span>
+        <span class="stat-label">Días consecutivos</span>
+      </div>
+    </div>
+  </div>-->
+
+  <button id="installBtn" class="install-button">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 16L12 4M12 16L8 12M12 16L16 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M4 20H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+    Instalar App
+  </button>
+</div>
+
+<footer>
+  <div class="footer-content">
+    <p>Vivos Para Servir &copy; 2025 - Ministerio de Enseñanza del Griego Koiné. Desarrollado por Rolando Desdín. </p>
+  </div>
+</footer>
+
+<script>
+  // Mostrar estadísticas de cada juego en la página principal
+  const games = [
+    { id: 'presente', element: 'stats-presente' },
+    { id: 'imperfecto', element: 'stats-imperfecto' },
+    { id: 'futuro', element: 'stats-futuro' },
+    { id: 'aoristo', element: 'stats-aoristo' },
+    { id: 'perfecto', element: 'stats-perfecto' },
+    { id: 'aoristo-activo', element: 'stats-aoristo-activo' },
+    { id: 'mega', element: 'stats-mega' }
+  ];
+
+  games.forEach(game => {
+    showStats(game.element, game.id);
+  });
+  
+  // Mostrar global
+  showGlobalStats('estadisticasGlobal');
+
+  // Botón PWA
+  let deferredPrompt;
+  const installBtn = document.getElementById('installBtn');
+  installBtn.style.display = 'none';
+  
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    installBtn.style.display = 'block';
+  });
+  
+  installBtn.addEventListener('click', async () => {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      if (outcome === 'accepted') {
+        installBtn.style.display = 'none';
+      }
+      deferredPrompt = null;
+    }
+  });
+
+  // Service Worker
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('service-worker.js')
+        .then((registration) => {
+          console.log('Service Worker registrado con éxito:', registration);
+        })
+        .catch((error) => {
+          console.log('Error al registrar el Service Worker:', error);
+        });
+    });
+  }
+</script>
+</body>
+</html>
